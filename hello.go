@@ -29,10 +29,10 @@ typecon,err:=strconv.Atoi(strName)//Atoi func returns two value 1.result of conv
 
 fmt.Println(typecon,err,reflect.TypeOf(typecon))//returns type of variable,typeconversion string to int
 repeat(add,sub,mul,div)//example for if statements*/
-demo.Array()//example for array
+//demo.Array()//example for array
 //demo.Student()//
 //workday()//example for switch
-//demo.Hashmap()
+demo.Hashmap()
 }
 func repeat(add,sub,mul,div int){
     if add<mul{
