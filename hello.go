@@ -15,26 +15,24 @@ func operation(a,b int) (int,int,int,int){
 return sum,sub,mul,div
 }
 func main() {
-    var(
+   /* var(
         a=0
-        b=5
-        //c=3.0
-        //strName = "100"
+       b=5
+    c=3.0
+        strName = "100"
     )
-fmt.Println("Hello, World!")
-fmt.Println(a,b)
- //add,sub,mul,div:=operation(a,b)//calling func operation
-//fmt.Println(add,sub,mul,div)
-//typecon,err:=strconv.Atoi(strName)//Atoi func returns two value 1.result of conversion 2.error
+ fmt.Println("Hello, World!")
+ fmt.Println(a,b)
+ add,sub,mul,div:=operation(a,b)//calling func operation
+fmt.Println(add,sub,mul,div)
+typecon,err:=strconv.Atoi(strName)//Atoi func returns two value 1.result of conversion 2.error
 
-//fmt.Println(typecon,err,reflect.TypeOf(typecon))//returns type of variable,typeconversion string to int
-//repeat(add,sub,mul,div)
-
-defer demo.Main()
-//demo.Array()
+fmt.Println(typecon,err,reflect.TypeOf(typecon))//returns type of variable,typeconversion string to int
+repeat(add,sub,mul,div)//example for if statements*/
+demo.Array()//example for array
 //demo.Student()//
-//workday()
-demo.Hashmap()
+//workday()//example for switch
+//demo.Hashmap()
 }
 func repeat(add,sub,mul,div int){
     if add<mul{

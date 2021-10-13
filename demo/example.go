@@ -3,11 +3,9 @@ package demo
 import (
 	"fmt"
 	"reflect"
+    //"sort"
 )
-
-func Main() {
-	fmt.Println("hello")
-}
+//array example
 func Array() {
 	var a [5]int
 	a[2] = 2
@@ -16,6 +14,9 @@ func Array() {
 	fmt.Println(reflect.TypeOf(a), a)
 	fmt.Println(len(num), "Elements:", num)
 	fmt.Print(name[:], "\n", name[0:4], "\n", name[len(name)-2:len(name)-1], "\n")
+    for _,i:=range name{
+        fmt.Println(i)
+    }
 
 }
 func Student() {
@@ -32,9 +33,35 @@ func Student() {
 		panic(fmt.Sprintf("I am a  %d", action))
 	}
 }
+//map example
 func Hashmap() {
-	var num = map[string]int{"Mahesh": 10, "Ganesh": 20}
-	for name := range num {
-		fmt.Println(name, ":", num[name])
+	//var num = map[string]int{"Mahesh": 10, "Ganesh": 20}
+    var countryname map[string]string 
+    countryname=make(map[string]string)
+    countryname["India"]="New Delhi"
+    countryname["Japan"]="Tokyo"
+    countryname["England"]="London"
+    keys := make([]string, 0, len(countryname))//slice
+ 
+	for k := range countryname {
+		keys = append(keys,k)//we append key to the slice
+
+	}
+   // sort.Strings(keys)
+    for _,k:=range keys{
+        fmt.Println(k)
+    }
+    defer fmt.Println(reflect.ValueOf(countryname).Kind())//returs type of variable countryname
+    fmt.Println("Before Deleting")
+    fmt.Println("Size of Countryname variable:",len(countryname))
+	for name := range countryname {
+		fmt.Println("Capital of",name,"is", countryname[name])
+	}
+    delete(countryname,"Japan")//deletes particular elements
+    //countryname=make(map[string]string)//deleting all elements from map variable
+    fmt.Println("After Deleting")
+    fmt.Println("Size of Countryname variable:",len(countryname))
+    for name := range countryname {
+		fmt.Println("Capital of",name,"is", countryname[name])
 	}
 }
