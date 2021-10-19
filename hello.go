@@ -5,7 +5,7 @@ import (
 //"reflect"
 //"strconv"
 "time"
-//"golang/demo"
+"golang/demo"
 )
 func operation(a,b int) (int,int,int,int){
     sum:=a+b
@@ -15,7 +15,7 @@ func operation(a,b int) (int,int,int,int){
 return sum,sub,mul,div
 }
 func main() {
-    var(
+   /* var(
         a=0
        b=0
     //c=3.0
@@ -35,6 +35,7 @@ workday()//example for switch
 demo.Hashmap()
 mt.Println("Area of rectangle r1 is",demo.Area(10.0,2.0))
 demo.Example()*/
+demo.Interface()
 }
 func repeat(add,sub,mul,div int){
     if add<mul{
