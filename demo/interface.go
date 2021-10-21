@@ -1,16 +1,16 @@
 package demo
 import(
 	"fmt"
-
+	"reflect"
 	)
 
 	type Vehicle interface {
-		Structure() []string // Common Method
+		Structure() []string 
 		Speed() string
 	}
 	
 	type Human interface {
-		Structure() []string // Common Method
+		Structure() []string 
 		Performance() string
 	}
 	
@@ -25,8 +25,8 @@ import(
 		return "200 Km/Hrs"
 	}
 	
+
 	type Man string
-	
 	func (m Man) Structure() []string {
 		var parts = []string{"Brain", "Heart", "Nose", "Eyelashes", "Stomach"}
 		return parts
@@ -38,13 +38,14 @@ import(
 	
 	func Interface() {
 		var bmw Vehicle
-		bmw = Car("World Top Brand")
+		bmw = new(Car)
 	
 		var labour Human
-		labour = Man("Software Developer")
+		labour=new(Man)
 	
 		for i, j := range bmw.Structure() {
 			fmt.Printf("%-15s <=====> %15s\n", j, labour.Structure()[i])
-			fmt.Println(bmw.Speed())
+			
 		}
+		fmt.Println(reflect.TypeOf(labour),labour.Performance())
 	}

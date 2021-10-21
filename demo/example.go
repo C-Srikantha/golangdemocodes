@@ -45,7 +45,7 @@ func Hashmap() {
 		fmt.Println("Capital of",name,"is", countryname[name])
 	}
     delete(countryname,"Japan")//deletes particular elements
-    countryname=make(map[string]string)//deleting all elements from map variable
+    //countryname=make(map[string]string)//deleting all elements from map variable
     fmt.Println("After Deleting")
     fmt.Println("Size of Countryname variable:",len(countryname))
     for name := range countryname {
