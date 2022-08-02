@@ -4,12 +4,12 @@ import (
 	"fmt"
 	//"reflect"
 	//"strconv"
-	"errors"
+
 	"golang/demo"
 	"time"
 )
 
-func operation(a, b int) (int, int, int, int, error) {
+/*func operation(a, b int) (int, int, int, int, error) {
 	sum := a + b
 	sub := a - b
 	mul := a * b
@@ -20,7 +20,7 @@ func operation(a, b int) (int, int, int, int, error) {
 		div := a / b
 		return sum, sub, mul, div, nil
 	}
-}
+}*/
 
 func main() {
 	/*var(
