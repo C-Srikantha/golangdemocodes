@@ -9,6 +9,9 @@ import (
 	"time"
 )
 
+func hell() {
+	fmt.Println("lol")
+}
 func operation(a, b int) (int, int, int, int, error) {
 	sum := a + b
 	sub := a - b
