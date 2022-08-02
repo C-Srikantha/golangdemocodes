@@ -23,6 +23,7 @@ import (
 }*/
 
 func main() {
+
 	/*var(
 	        a=0
 	       b=0
@@ -85,4 +86,7 @@ func workday() {
 
 func goodmoring() {
 	fmt.Println("good morning")
+}
+func goodNight() {
+	fmt.Println("goodnight")
 }
