@@ -90,4 +90,5 @@ func goodmoring() {
 func goodNight() {
 	fmt.Println("goodnight")
 	fmt.Println("hello")
+	fmt.Println("fe cmt 2")
 }
