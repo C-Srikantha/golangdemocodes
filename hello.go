@@ -88,4 +88,5 @@ func workday() {
 
 func goodmoring() {
 	fmt.Println("good morning")
+	fmt.Println("mas cmt2")
 }
